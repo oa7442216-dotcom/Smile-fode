@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>لوحة التحكم - سمايل فود</title>
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+.admin-container{
+max-width:900px;
+margin:40px auto;
+background:#fff;
+padding:25px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,.15);
+}
+
+.admin-container h2{
+text-align:center;
+color:#0b7a2a;
+margin-bottom:20px;
+}
+
+.admin-container input,
+.admin-container textarea{
+width:100%;
+padding:12px;
+margin:10px 0;
+border:1px solid #ccc;
+border-radius:8px;
+font-size:16px;
+}
+
+.admin-container button{
+background:#0b7a2a;
+color:#fff;
+border:none;
+padding:12px 20px;
+border-radius:8px;
+cursor:pointer;
+font-size:16px;
+}
+
+.admin-container button:hover{
+background:#095e20;
+}
+
+table{
+width:100%;
+margin-top:20px;
+border-collapse:collapse;
+}
+
+table th,
+table td{
+border:1px solid #ddd;
+padding:10px;
+text-align:center;
+}
+
+table th{
+background:#0b7a2a;
+color:white;
+}
+
+.delete-btn{
+background:red;
+}
+
+.delete-btn:hover{
+background:darkred;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+<div class="logo">🫒 سمايل فود</div>
+</header>
+
+<div class="admin-container">
+
+<h2>إضافة منتج جديد</h2>
+
+<input type="text" id="name" placeholder="اسم المنتج">
+
+<input type="number" id="price" placeholder="السعر">
+
+<input type="text" id="image" placeholder="رابط الصورة">
+
+<textarea id="description" placeholder="وصف المنتج"></textarea>
+
+<button onclick="addProduct()">
+إضافة المنتج
+</button>
+
+<button class="delete-btn" onclick="deleteAllProducts()">
+حذف جميع المنتجات
+</button>
+
+<table>
+
+<thead>
+
+<tr>
+<th>الصورة</th>
+<th>الاسم</th>
+<th>السعر</th>
+<th>حذف</th>
+</tr>
+
+</thead>
+
+<tbody id="productsList">
+
+</tbody>
+
+</table>
+
+</div>
