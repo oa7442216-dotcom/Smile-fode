@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>منتجات سمايل فود</title>
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+.products{
+padding:40px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.card{
+background:#fff;
+border-radius:15px;
+overflow:hidden;
+box-shadow:0 5px 15px rgba(0,0,0,.15);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+.card img{
+width:100%;
+height:230px;
+object-fit:cover;
+}
+
+.info{
+padding:20px;
+text-align:center;
+}
+
+.info h3{
+font-size:24px;
+margin-bottom:10px;
+}
+
+.price{
+color:#d40000;
+font-size:28px;
+font-weight:bold;
+margin:15px 0;
+}
+
+.buy{
+display:block;
+background:#0b7a2a;
+color:#fff;
+padding:12px;
+text-decoration:none;
+border-radius:8px;
+margin-top:10px;
+}
+
+.buy:hover{
+background:#095e20;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">🫒 سمايل فود</div>
+
+<nav>
+
+<a href="index.html">الرئيسية</a>
+
+<a href="products.html">المنتجات</a>
+
+<a href="login.html">تسجيل الدخول</a>
+
+<a href="register.html">إنشاء حساب</a>
+
+</nav>
+
+</header>
+
+<section class="products">
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1593001874117-c99c800e3eb9?auto=format&fit=crop&w=800&q=80">
+
+<div class="info">
+
+<h3>زيتون أخضر سوبر</h3>
+
+<p class="price">80 جنيه</p>
+
+<a class="buy" href="https://wa.me/201017900660?text=أريد طلب زيتون أخضر">
+اطلب الآن
+</a>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1603048297172-f84e62e0e2a8?auto=format&fit=crop&w=800&q=80">
+
+<div class="info">
+
+<h3>مخلل خيار</h3>
+
+<p class="price">65 جنيه</p>
+
+<a class="buy" href="https://wa.me/201017900660?text=أريد طلب مخلل خيار">
+اطلب الآن
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+</body>
+</html>
